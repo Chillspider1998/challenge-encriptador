@@ -4,22 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Encriptador</title>
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__nav">
-            <img class="cabecalho__nav__img" src="" alt="logo da Alura">
+            <img class="cabecalho__nav__logo" src="./assets/logo.png" alt="logo da Alura">
         </nav>
     </header>
 
     <main class="conteudo">
-        <section class="conteudo__section">
-            <textarea class="conteudo__section__input" cols="41" rows="4"></textarea>
+        <section class="conteudo__entrada">
+            <textarea class="conteudo__entrada__textarea" cols="41" rows="4" placeholder="Digite o texto"></textarea>
+
+            <div class="conteudo__entrada__instrucao">
+                <h6> Somente letras minusculas e sem acento.</h6>
+            </div>
+            
+            <div class="conteudo__entrada__botoes">
+                <button class="conteudo__entrada__encriptar">Criptografar</button>
+                <button class="conteudo__desemcriptar__desencriptar">Descriptografar</button>
+            </div>
         </section>
 
-        <section class="conteudo__section">
-            <textarea class="conteudo__section__output" cols="20" rows="10"></textarea>
+        <section class="conteudo__saida">
+            <textarea class="conteudo__saida__textarea" cols="20" rows="10"></textarea>
+
+            <button class="conteudo__saida__copiar">Copiar</button>
         </section>
     </main>
 
