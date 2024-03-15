@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     background-color: #e5e5e5;
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -6,6 +8,37 @@
     line-height: 150%;
 }
 
-.cabecalho__nav__logo {
-    margin-left: 2%;
+.cabecalho__nav {
+    display: flex;
+    padding: 2% 2%;
+    justify-content: left;
+}
+
+.conteudo {
+    display: flex;
+    gap: 2rem;
+}
+
+.conteudo__entrada {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0% 0% 4%;
+}
+
+.conteudo__entrada__textarea {
+    border-style: none;
+    width: 680px;
+    height: 48px;
+}
+
+.conteudo__entrada__textarea::placeholder {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+}
+
+.conteudo__entrada__botoes {
+    display: flex;
+    gap: 2rem;
 }
