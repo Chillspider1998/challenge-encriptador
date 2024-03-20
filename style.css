@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     background-color: #E5E5E5;
     font-family: 'Inter', sans-serif;
     font-size: 32px;
@@ -21,17 +19,73 @@
 }
 
 .apresentacao__conteudo__textarea {
-    width: 680px;
-    height: 48px;
-    border-style: none;
-}
-
-.apresentacao__conteudo__textarea::placeholder {
+    border: none;
     color: #0A3871;
+    text-transform: lowercase; /* coloca todas as letras dentro do text-area em minusculo */
 }
 
-/* section do texto criptografado + botao 'copiar' */
-.apresentacao__conteudo__saida {
+::placeholder { color: #0A3871; }
+    .apresentacao__conteudo__textarea:focus {
+        outline: none; /* remove as bordas mesmo que se o text-area estiver selecionado */
+    }
+
+.conteudo__instrucao__texto {
+    color: #495057;
+    font-size: 18px;
+}
+
+.apresentacao__conteudo__botoes{
     display: flex;
-    flex-direction: column;
+    margin-top: 18px;
+}
+
+.conteudo__botoes__criptografar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #fff;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.conteudo__botoes__descriptografar {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 30px;
+}
+
+.conteudo__saida__textarea {
+    background-color: #fff;
+    background-image: url('./assets/bg-image.png');
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    height: 600px;
+}
+
+.conteudo__saida__textarea:focus {
+    outline: none;
+}
+
+.conteudo__saida__copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin-left: 125px;
+    margin-top: 402px;
+    position: absolute;
 }
